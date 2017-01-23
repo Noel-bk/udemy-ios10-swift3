@@ -88,6 +88,19 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         requestInfo["country"] = countryTextField.text
         requestInfo["zip"] = zipTextField.text
         print("requestInfo: \(requestInfo)")
+        
+        
+        // downcasting??
+        let fullName = requestInfo["full_name"]! as String
+        // alert
+        let alert = UIAlertController(title: "requestInfo", message: "Hello, \(fullName).", preferredStyle: .alert)
+        let closeAction = UIAlertAction(title: "close", style: .cancel, handler: nil)
+        
+        alert.addAction(closeAction)
+        
+        self.present(alert, animated: true, completion: nil)
+        
+        
     }
     
 }
