@@ -34,12 +34,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         statePicker.dataSource = self
         statePicker.delegate = self
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func stateBtnPressed(_ sender: Any) {
         self.hideTextFields(flag: true)
         statePicker.isHidden = false
@@ -73,13 +73,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     @IBAction func buynowBtnPressed(_ sender: Any) {
-        // hide everything
-        for view in self.view.subviews as [UIView] {
-            if !view.isHidden {
-                view.isHidden = true
-            }
-        }
-        successImgView.isHidden = false
         
         // store data
         requestInfo["full_name"] = fullnameTextField.text
@@ -90,7 +83,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         // alert
         let alert = UIAlertController(title: "Miracle Pills", message: "Are you sure?", preferredStyle: .alert)
-        let confirmAction = UIAlertAction(title: "OK", style: .default, handler: {(alert: UIAlertAction!) in print("requestInfo: \(self.requestInfo)")})
+        let confirmAction = UIAlertAction(title: "OK", style: .default, handler: {(alert: UIAlertAction!) in self.hideAll(); self.successImgView.isHidden = false; print("requestInfo: \(self.requestInfo)");})
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
         
         alert.addAction(confirmAction)
@@ -98,6 +91,15 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         self.present(alert, animated: true, completion: nil)
         
+    }
+    
+    func hideAll() {
+        // hide everything
+        for view in self.view.subviews as [UIView] {
+            if !view.isHidden {
+                view.isHidden = true
+            }
+        }
     }
     
 }
