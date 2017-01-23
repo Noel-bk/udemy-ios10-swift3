@@ -87,19 +87,16 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         requestInfo["city"] = cityTextField.text
         requestInfo["country"] = countryTextField.text
         requestInfo["zip"] = zipTextField.text
-        print("requestInfo: \(requestInfo)")
         
-        
-        // downcasting??
-        let fullName = requestInfo["full_name"]! as String
         // alert
-        let alert = UIAlertController(title: "requestInfo", message: "Hello, \(fullName).", preferredStyle: .alert)
-        let closeAction = UIAlertAction(title: "close", style: .cancel, handler: nil)
+        let alert = UIAlertController(title: "Miracle Pills", message: "Are you sure?", preferredStyle: .alert)
+        let confirmAction = UIAlertAction(title: "OK", style: .default, handler: {(alert: UIAlertAction!) in print("requestInfo: \(self.requestInfo)")})
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
         
-        alert.addAction(closeAction)
+        alert.addAction(confirmAction)
+        alert.addAction(cancelAction)
         
         self.present(alert, animated: true, completion: nil)
-        
         
     }
     
