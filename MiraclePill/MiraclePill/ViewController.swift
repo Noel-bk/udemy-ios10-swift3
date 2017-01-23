@@ -12,6 +12,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     let states = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]
     
+    @IBOutlet weak var fullnameTextField: UITextField!
+    @IBOutlet weak var streetAddressTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
+    
     @IBOutlet weak var statePicker: UIPickerView!
     @IBOutlet weak var statePickerBtn: UIButton!
     @IBOutlet weak var countryLabel: UILabel!
@@ -20,6 +24,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var zipTextField: UITextField!
     @IBOutlet weak var buynowBtn: UIButton!
     @IBOutlet weak var successImgView: UIImageView!
+    
+    var requestInfo = [String:String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +61,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         statePickerBtn.setTitle(states[row], for: UIControlState.normal)
         self.hideTextFields(flag: false)
         statePicker.isHidden = true
+        
+        requestInfo["state"] = states[row]
     }
     
     func hideTextFields(flag: Bool) {
@@ -72,6 +80,14 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             }
         }
         successImgView.isHidden = false
+        
+        // store data
+        requestInfo["full_name"] = fullnameTextField.text
+        requestInfo["street_address"] = streetAddressTextField.text
+        requestInfo["city"] = cityTextField.text
+        requestInfo["country"] = countryTextField.text
+        requestInfo["zip"] = zipTextField.text
+        print("requestInfo: \(requestInfo)")
     }
     
 }

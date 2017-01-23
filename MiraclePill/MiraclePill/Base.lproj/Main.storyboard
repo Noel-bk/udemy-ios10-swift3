@@ -245,10 +245,13 @@
                     </view>
                     <connections>
                         <outlet property="buynowBtn" destination="OzH-vk-cQK" id="u5o-zy-goG"/>
+                        <outlet property="cityTextField" destination="1ow-l0-veA" id="q72-u2-5Ul"/>
                         <outlet property="countryLabel" destination="SeX-HA-rae" id="0L1-MK-9ka"/>
                         <outlet property="countryTextField" destination="1R9-Xa-rih" id="Afg-gY-oBL"/>
+                        <outlet property="fullnameTextField" destination="Bei-ID-OTn" id="T16-DC-0lC"/>
                         <outlet property="statePicker" destination="Nhx-YN-K2Z" id="85p-y9-DnQ"/>
                         <outlet property="statePickerBtn" destination="j9K-w8-GJG" id="cvR-Xe-cAK"/>
+                        <outlet property="streetAddressTextField" destination="WNs-FE-Yx7" id="pSI-hO-ZXv"/>
                         <outlet property="successImgView" destination="HJ4-Ut-fqU" id="Gk0-cR-t0V"/>
                         <outlet property="zipLabel" destination="U0t-zh-Mkr" id="0c8-Tf-4eq"/>
                         <outlet property="zipTextField" destination="o2T-8R-74b" id="BR8-QA-r70"/>
