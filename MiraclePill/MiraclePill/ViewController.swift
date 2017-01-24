@@ -33,6 +33,14 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         statePicker.dataSource = self
         statePicker.delegate = self
+        
+        // implement the gesture recognizer
+        let gesture = UITapGestureRecognizer(target: self, action: "successImgViewtapped")
+        successImgView.addGestureRecognizer(gesture)
+    }
+    
+    func successImgViewtapped() {
+        print("tapped..")
     }
     
     override func didReceiveMemoryWarning() {
@@ -83,7 +91,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         // alert
         let alert = UIAlertController(title: "Miracle Pills", message: "Are you sure?", preferredStyle: .alert)
-        let confirmAction = UIAlertAction(title: "OK", style: .default, handler: {(alert: UIAlertAction!) in self.hideAll(); self.successImgView.isHidden = false; print("requestInfo: \(self.requestInfo)");})
+        let confirmAction = UIAlertAction(title: "OK", style: .default, handler: {(alert: UIAlertAction!) in self.hideAll(flag: true); self.successImgView.isHidden = false; print("requestInfo: \(self.requestInfo)");})
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
         
         alert.addAction(confirmAction)
@@ -93,11 +101,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
     }
     
-    func hideAll() {
-        // hide everything
+    func hideAll(flag: Bool) {
         for view in self.view.subviews as [UIView] {
-            if !view.isHidden {
+            if (flag) { // hide everything
                 view.isHidden = true
+            } else {
+                view.isHidden = false
             }
         }
     }
