@@ -96,7 +96,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         // alert
         let alert = UIAlertController(title: "Miracle Pills", message: "Are you sure?", preferredStyle: .alert)
-        let confirmAction = UIAlertAction(title: "OK", style: .default, handler: {(alert: UIAlertAction!) in self.hideAll(); self.successImgView.isHidden = false; print("requestInfo: \(self.requestInfo)");})
+        let confirmAction = UIAlertAction(title: "OK", style: .default, handler: {(alert: UIAlertAction!) in self.hideAll(); self.successImgView.isHidden = false; print("requestInfo: \(self.requestInfo)"); self.clearTextFields(); })
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
         
         alert.addAction(confirmAction)
@@ -109,6 +109,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func hideAll() {
         for view in self.view.subviews as [UIView] {
             view.isHidden = true
+        }
+    }
+    
+    func clearTextFields() {
+        for case let textField as UITextField in self.view.subviews {
+            textField.text = ""
         }
     }
     
