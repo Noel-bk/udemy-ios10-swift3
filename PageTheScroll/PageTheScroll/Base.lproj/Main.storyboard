@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -46,6 +46,7 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="kVh-Xh-hbP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3ph-W4-KKf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kVh-Xh-hbP" secondAttribute="bottom" id="CKF-Ga-idU"/>
@@ -60,12 +61,16 @@
                             <constraint firstItem="On1-OM-DFa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gwK-pa-EJF"/>
                             <constraint firstItem="EMm-nq-Ccp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hUe-27-bYl"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="sg7-XO-kuS" appends="YES" id="rHa-j7-5dw"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="EMm-nq-Ccp" id="D67-7s-i0b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="sg7-XO-kuS"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>

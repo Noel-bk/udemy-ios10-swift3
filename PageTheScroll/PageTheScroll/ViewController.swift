@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
+        view.addGestureRecognizer(scrollView.panGestureRecognizer)
+        
         var contentWidth: CGFloat = 0.0
         
         let scrollWidth = scrollView.frame.size.width
@@ -40,7 +42,7 @@ class ViewController: UIViewController {
             imageView.frame = CGRect(x: newX - (150/2), y: (scrollView.frame.size.height/2) - (150/2), width: 150, height: 150)
         }
         
-//        scrollView.backgroundColor = UIColor.darkGray
+//        scrollView.backgroundColor = UIColor.sddarkGray
         scrollView.clipsToBounds = false
         
         scrollView.contentSize = CGSize(width: contentWidth, height: view.frame.size.height)
