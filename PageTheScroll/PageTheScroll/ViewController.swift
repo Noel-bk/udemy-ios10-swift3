@@ -31,20 +31,15 @@ class ViewController: UIViewController {
             let image = UIImage(named: "icon\(x).png")
             let imageView = UIImageView(image: image)
             images.append(imageView)
-            
             var newX: CGFloat = 0.0
             newX = scrollWidth / 2 + scrollWidth * CGFloat(x)
-            
             contentWidth += newX
-            
             scrollView.addSubview(imageView)
-            
             imageView.frame = CGRect(x: newX - (150/2), y: (scrollView.frame.size.height/2) - (150/2), width: 150, height: 150)
         }
         
 //        scrollView.backgroundColor = UIColor.sddarkGray
-        scrollView.clipsToBounds = false
-        
+        scrollView.clipsToBounds = falsesdf
         scrollView.contentSize = CGSize(width: contentWidth, height: view.frame.size.height)
     }
     
