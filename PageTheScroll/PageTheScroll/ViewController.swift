@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         }
         
 //        scrollView.backgroundColor = UIColor.sddarkGray
-        scrollView.clipsToBounds = falsesdf
+        scrollView.clipsToBounds = false
         scrollView.contentSize = CGSize(width: contentWidth, height: view.frame.size.height)
     }
     
