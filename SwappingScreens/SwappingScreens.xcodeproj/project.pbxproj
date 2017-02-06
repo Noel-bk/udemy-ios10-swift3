@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59147B881E48C429008518B6 /* PlaySongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59147B871E48C429008518B6 /* PlaySongVC.swift */; };
 		59BC0D771E48BA3E00767931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BC0D761E48BA3E00767931 /* AppDelegate.swift */; };
 		59BC0D791E48BA3E00767931 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BC0D781E48BA3E00767931 /* LoginVC.swift */; };
 		59BC0D7C1E48BA3E00767931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59BC0D7A1E48BA3E00767931 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59147B871E48C429008518B6 /* PlaySongVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySongVC.swift; sourceTree = "<group>"; };
 		59BC0D731E48BA3E00767931 /* SwappingScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwappingScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BC0D761E48BA3E00767931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59BC0D781E48BA3E00767931 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				59BC0D761E48BA3E00767931 /* AppDelegate.swift */,
 				59BC0D781E48BA3E00767931 /* LoginVC.swift */,
 				59BC0D881E48BC1900767931 /* MusicListVC.swift */,
+				59147B871E48C429008518B6 /* PlaySongVC.swift */,
 				59BC0D7A1E48BA3E00767931 /* Main.storyboard */,
 				59BC0D7D1E48BA3E00767931 /* Assets.xcassets */,
 				59BC0D7F1E48BA3E00767931 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59BC0D791E48BA3E00767931 /* LoginVC.swift in Sources */,
+				59147B881E48C429008518B6 /* PlaySongVC.swift in Sources */,
 				59BC0D891E48BC1900767931 /* MusicListVC.swift in Sources */,
 				59BC0D771E48BA3E00767931 /* AppDelegate.swift in Sources */,
 			);
@@ -303,6 +307,7 @@
 				59BC0D871E48BA3E00767931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
