@@ -58,11 +58,11 @@
 			children = (
 				59BC0D761E48BA3E00767931 /* AppDelegate.swift */,
 				59BC0D781E48BA3E00767931 /* LoginVC.swift */,
+				59BC0D881E48BC1900767931 /* MusicListVC.swift */,
 				59BC0D7A1E48BA3E00767931 /* Main.storyboard */,
 				59BC0D7D1E48BA3E00767931 /* Assets.xcassets */,
 				59BC0D7F1E48BA3E00767931 /* LaunchScreen.storyboard */,
 				59BC0D821E48BA3E00767931 /* Info.plist */,
-				59BC0D881E48BC1900767931 /* MusicListVC.swift */,
 			);
 			path = SwappingScreens;
 			sourceTree = "<group>";
