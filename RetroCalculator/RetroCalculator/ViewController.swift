@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         playSound()
         
         runningNumber += "\(sender.tag)"
-        outputLbl.text = runningNumbersd
+        outputLbl.text = runningNumber
     }
 
     func playSound() {
