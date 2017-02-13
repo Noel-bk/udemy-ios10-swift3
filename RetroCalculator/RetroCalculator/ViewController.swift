@@ -44,6 +44,10 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func clearPressed(_ sender: Any) {
+        print("logic goes here..")
+    }
+    
     @IBAction func numberPressed(sender: UIButton) {
         playSound()
         
