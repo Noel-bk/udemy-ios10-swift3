@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     @IBAction func clearPressed(_ sender: Any) {
         print("logic goes here..")
         outputLbl.text = "0"
-        processOperation(operation: .Emptysd)
+        processOperation(operation: .Empty)
         
     }
     
