@@ -55,7 +55,8 @@ class ViewController: UIViewController {
         playSound()
         
         runningNumber += "\(sender.tag)"
-        outputLbl.text = runningNumber
+//        outputLbl.text = runningNumber
+        displayCommas(str: runningNumber)
     }
     
     @IBAction func onDividePressed(sender: AnyObject) {
@@ -113,6 +114,20 @@ class ViewController: UIViewController {
             runningNumber = ""
             currentOperation = operation
         }
+    }
+    
+    // TODO
+    // fix this later
+    func displayCommas(str: String) {
+        
+        let numberFormatter = NumberFormatter()
+        numberFormatter.usesGroupingSeparator = true
+        numberFormatter.numberStyle = .decimal
+        
+        let result:String = numberFormatter.string(from: NSNumber.init( value: Int32(str)!))!
+        print("@@@ \(result)")
+        outputLbl.text = result
+        
     }
 }
 
