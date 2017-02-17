@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     var leftValStr = ""
     var rightValStr = ""
     var result = ""
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -53,10 +53,8 @@ class ViewController: UIViewController {
     
     @IBAction func numberPressed(sender: UIButton) {
         playSound()
-        
         runningNumber += "\(sender.tag)"
-//        outputLbl.text = runningNumber
-        displayCommas(str: runningNumber)
+        outputLbl.text = displayCommas(str: runningNumber)
     }
     
     @IBAction func onDividePressed(sender: AnyObject) {
@@ -78,14 +76,14 @@ class ViewController: UIViewController {
     @IBAction func onEqualPressed(sender: AnyObject) {
         processOperation(operation: currentOperation)
     }
-
+    
     func playSound() {
         if (btnSound.isPlaying) {
             btnSound.stop()
         }
         btnSound.play()
     }
-
+    
     func processOperation(operation: Operation) {
         playSound()
         if (currentOperation != Operation.Empty) {
@@ -118,15 +116,15 @@ class ViewController: UIViewController {
     
     // TODO
     // fix this later
-    func displayCommas(str: String) {
+    func displayCommas(str: String) -> String {
         
         let numberFormatter = NumberFormatter()
         numberFormatter.usesGroupingSeparator = true
         numberFormatter.numberStyle = .decimal
         
-        let result:String = numberFormatter.string(from: NSNumber.init( value: Int32(str)!))!
-        print("@@@ \(result)")
-        outputLbl.text = result
+        let result:String = numberFormatter.string(from: NSNumber.init(value: Int32(str)!))!
+        
+        return result
         
     }
 }
