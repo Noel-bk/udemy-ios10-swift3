@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     var runningNumber = ""
     var leftValStr = ""
     var rightValStr = ""
-    var result = ""
+    var result:Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,16 +94,17 @@ class ViewController: UIViewController {
                 runningNumber = ""
                 
                 if (currentOperation == Operation.Multiply) {
-                    result = "\(Double(leftValStr)! * Double(rightValStr)!)"
+                    result = Double(leftValStr)! * Double(rightValStr)!
                 } else if (currentOperation == Operation.Divide) {
-                    result = "\(Double(leftValStr)! / Double(rightValStr)!)"
+                    result = Double(leftValStr)! / Double(rightValStr)!
                 } else if (currentOperation == Operation.Subtract) {
-                    result = "\(Double(leftValStr)! - Double(rightValStr)!)"
+                    result = Double(leftValStr)! - Double(rightValStr)!
                 } else if (currentOperation == Operation.Add) {
-                    result = "\(Double(leftValStr)! + Double(rightValStr)!)"
+                    result = Double(leftValStr)! + Double(rightValStr)!
                 }
-                leftValStr = result
-                outputLbl.text = result
+                
+                leftValStr = forTailingZero(temp: result)
+                outputLbl.text = leftValStr
             }
             currentOperation = operation
         } else {
@@ -114,8 +115,6 @@ class ViewController: UIViewController {
         }
     }
     
-    // TODO
-    // fix this later
     func displayCommas(str: String) -> String {
         
         let numberFormatter = NumberFormatter()
@@ -126,6 +125,11 @@ class ViewController: UIViewController {
         
         return result
         
+    }
+    
+    func forTailingZero(temp: Double) -> String {
+        let tempVar = String(format: "%g", temp)
+        return tempVar
     }
 }
 
