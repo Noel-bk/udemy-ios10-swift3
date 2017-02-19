@@ -54,7 +54,7 @@
                                     <constraint firstAttribute="height" constant="36" id="NvN-hz-7yZ"/>
                                     <constraint firstAttribute="width" constant="256" id="QrZ-nG-0lE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
