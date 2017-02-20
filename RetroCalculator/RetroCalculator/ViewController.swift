@@ -31,7 +31,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         let path = Bundle.main.path(forResource: "btn", ofType: "wav")
         let soundURL = URL(fileURLWithPath: path!)
@@ -48,7 +47,6 @@ class ViewController: UIViewController {
         print("logic goes here..")
         outputLbl.text = "0"
         processOperation(operation: .Empty)
-        
     }
     
     @IBAction func numberPressed(sender: UIButton) {
@@ -116,7 +114,6 @@ class ViewController: UIViewController {
     }
     
     func displayCommas(str: String) -> String {
-        
         let numberFormatter = NumberFormatter()
         numberFormatter.usesGroupingSeparator = true
         numberFormatter.numberStyle = .decimal
@@ -124,7 +121,6 @@ class ViewController: UIViewController {
         let result:String = numberFormatter.string(from: NSNumber.init(value: Int32(str)!))!
         
         return result
-        
     }
     
     func forTailingZero(temp: Double) -> String {
