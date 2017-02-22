@@ -23,10 +23,10 @@ class ViewController: UIViewController {
         case Empty = "Empty"
     }
     
-    var currentOperation = Operation.Empty
-    var runningNumber = ""
-    var leftValStr = ""
-    var rightValStr = ""
+    var currentOperation:Operation = Operation.Empty
+    var runningNumber:String = ""
+    var leftValStr:String = ""
+    var rightValStr:String = ""
     var result:Double = 0.0
     
     override func viewDidLoad() {
