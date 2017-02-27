@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		591E47CC1E64694000C55072 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 591E47CB1E64694000C55072 /* still time.ttf */; };
 		59E7CD4F1E63202200C6E7C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E7CD4E1E63202200C6E7C3 /* AppDelegate.swift */; };
 		59E7CD511E63202200C6E7C3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E7CD501E63202200C6E7C3 /* MainVC.swift */; };
 		59E7CD541E63202200C6E7C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59E7CD521E63202200C6E7C3 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		591E47CB1E64694000C55072 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
 		59E7CD4B1E63202200C6E7C3 /* PartyRockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyRockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E7CD4E1E63202200C6E7C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59E7CD501E63202200C6E7C3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		591E47CD1E64694D00C55072 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				591E47CB1E64694000C55072 /* still time.ttf */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
 		59E7CD421E63202100C6E7C3 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +64,7 @@
 		59E7CD4D1E63202200C6E7C3 /* PartyRockApp */ = {
 			isa = PBXGroup;
 			children = (
+				591E47CD1E64694D00C55072 /* Files */,
 				59E7CD621E6320BB00C6E7C3 /* Model */,
 				59E7CD611E6320AF00C6E7C3 /* View */,
 				59E7CD601E63208900C6E7C3 /* Controller */,
@@ -148,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59E7CD591E63202200C6E7C3 /* LaunchScreen.storyboard in Resources */,
+				591E47CC1E64694000C55072 /* still time.ttf in Resources */,
 				59E7CD561E63202200C6E7C3 /* Assets.xcassets in Resources */,
 				59E7CD541E63202200C6E7C3 /* Main.storyboard in Resources */,
 			);
@@ -323,6 +335,7 @@
 				59E7CD5F1E63202200C6E7C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
