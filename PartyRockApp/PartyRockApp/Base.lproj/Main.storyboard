@@ -123,10 +123,45 @@
                             <constraint firstItem="ONg-97-zhm" firstAttribute="top" secondItem="cKV-HG-eZB" secondAttribute="bottom" id="yX6-ba-tAK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="uBF-pf-CgR" kind="showDetail" identifier="VideoVC" id="2kc-eH-rPK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="yim-V9-KcE">
+            <objects>
+                <viewController id="uBF-pf-CgR" customClass="VideoVC" customModule="PartyRockApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aYN-47-Uf5"/>
+                        <viewControllerLayoutGuide type="bottom" id="pin-1B-9vh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lKk-BF-Xzu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSe-FU-4dR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="217" id="yJw-pe-gZJ"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87676475249999997" green="0.87676475249999997" blue="0.87676475249999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XSe-FU-4dR" secondAttribute="trailing" id="HW8-LQ-xFc"/>
+                            <constraint firstItem="XSe-FU-4dR" firstAttribute="leading" secondItem="lKk-BF-Xzu" secondAttribute="leading" id="kow-38-2Ld"/>
+                            <constraint firstItem="XSe-FU-4dR" firstAttribute="top" secondItem="lKk-BF-Xzu" secondAttribute="top" id="r5j-ue-O4p"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqw-gi-5Gq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="38.23088455772114"/>
         </scene>
     </scenes>
     <resources>
