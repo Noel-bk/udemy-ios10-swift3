@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		591E47CC1E64694000C55072 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 591E47CB1E64694000C55072 /* still time.ttf */; };
+		593A0E391E6710350067E8F5 /* Birds of Paradise.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 593A0E381E6710350067E8F5 /* Birds of Paradise.ttf */; };
 		595A70381E65ABF2008024EF /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A70371E65ABF2008024EF /* VideoVC.swift */; };
 		595A703B1E65AD9B008024EF /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A703A1E65AD9B008024EF /* PartyCell.swift */; };
 		595A703D1E65AF34008024EF /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595A703C1E65AF34008024EF /* PartyRock.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		591E47CB1E64694000C55072 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
+		593A0E381E6710350067E8F5 /* Birds of Paradise.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Birds of Paradise.ttf"; sourceTree = "<group>"; };
 		595A70371E65ABF2008024EF /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		595A703A1E65AD9B008024EF /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
 		595A703C1E65AF34008024EF /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		591E47CD1E64694D00C55072 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				593A0E381E6710350067E8F5 /* Birds of Paradise.ttf */,
 				591E47CB1E64694000C55072 /* still time.ttf */,
 			);
 			name = Files;
@@ -169,6 +172,7 @@
 			files = (
 				59E7CD591E63202200C6E7C3 /* LaunchScreen.storyboard in Resources */,
 				591E47CC1E64694000C55072 /* still time.ttf in Resources */,
+				593A0E391E6710350067E8F5 /* Birds of Paradise.ttf in Resources */,
 				59E7CD561E63202200C6E7C3 /* Assets.xcassets in Resources */,
 				59E7CD541E63202200C6E7C3 /* Main.storyboard in Resources */,
 			);

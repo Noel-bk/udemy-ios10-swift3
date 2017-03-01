@@ -44,6 +44,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>still time.ttf</string>
+		<string>Birds of Paradise.ttf</string>
 	</array>
 </dict>
 </plist>
