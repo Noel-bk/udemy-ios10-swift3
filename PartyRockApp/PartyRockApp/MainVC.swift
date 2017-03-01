@@ -19,13 +19,14 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         let p1 = PartyRock(imageURL: "https://i.ytimg.com/i/ikFwyFOljUy1SlljiTrZYA/1.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bTFQUMZG8Q8\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Nothing is Gonna Change My Love for You")
         
+        let p2 = PartyRock(imageURL: "http://www.joeleader.com/wp-content/uploads/2013/03/IMG_5555%20-%20what%20light%20from%20yonder%20window%20breaks-150x150.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/6RrwDpDrE04\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Joe Leader - Caruso (LIVE SAX, London 2013)")
+        
+        let p3 = PartyRock(imageURL: "http://placehold.it/150x150", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/s1dWgVlJskY\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Kotaro Oshio - wind song")
+        
+        
         partyRocks.append(p1)
-        partyRocks.append(p1)
-        partyRocks.append(p1)
-        partyRocks.append(p1)
-        partyRocks.append(p1)
-        partyRocks.append(p1)
-        partyRocks.append(p1)
+        partyRocks.append(p2)
+        partyRocks.append(p3)
     
         tableView.delegate = self
         tableView.dataSource = self
