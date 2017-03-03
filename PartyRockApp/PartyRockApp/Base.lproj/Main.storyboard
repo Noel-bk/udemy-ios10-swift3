@@ -91,7 +91,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Where the sun goes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIx-tq-n83">
                                                     <rect key="frame" x="91" y="14" width="276" height="54"/>
-                                                    <fontDescription key="fontDescription" name="BirdsofParadise" family="Birds of Paradise" pointSize="30"/>
+                                                    <fontDescription key="fontDescription" name="BirdsofParadise" family="Birds of Paradise" pointSize="26"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
