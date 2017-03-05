@@ -54,7 +54,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destinationViewController as? VideoVC {
+        if let destination = segue.destination as? VideoVC {
             if let party = sender as? PartyRock {
                 destination.partyRock = party
             }
