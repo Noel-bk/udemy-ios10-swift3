@@ -23,7 +23,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         let p3 = PartyRock(imageURL: "http://placehold.it/150x150", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/s1dWgVlJskY\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Kotaro Oshio - wind song")
         
-        
         partyRocks.append(p1)
         partyRocks.append(p2)
         partyRocks.append(p3)
@@ -41,7 +40,6 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         } else {
             return UITableViewCell()
         }
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
